@@ -21,6 +21,8 @@ export default class Start extends React.Component {
           
           <View style={styles.startContainer} >
             <TextInput
+              accessible={true}
+              accessibilityLabel='Type here'
               value={this.state.name}
               onChangeText={(name) => this.setState({name})} 
               style={styles.startInput}
@@ -29,24 +31,39 @@ export default class Start extends React.Component {
               <Text style={styles.colorChoiceText}>Choose Background Color:</Text>
               <View style={{flexDirection: 'row', justifyContent: 'flex-start'}}>
                 <TouchableOpacity 
+                  accessible={true}
+                  accessibilityLabel='Choose a black background'
+                  accessibilityRole='button'
                   style={[styles.colorChoice, styles.black]} 
                   onPress={() => this.setState({ backgroundColor: '#090C08'})} 
                 />
                 <TouchableOpacity 
+                  accessible={true}
+                  accessibilityLabel='Choose a purple background'
+                  accessibilityRole='button'
                   style={[styles.colorChoice, styles.purple]} 
                   onPress={() => this.setState({ backgroundColor: '#474056' })} 
                 />
                 <TouchableOpacity 
+                  accessible={true}
+                  accessibilityLabel='Choose a blue background'
+                  accessibilityRole='button'
                   style={[styles.colorChoice, styles.blue]} 
                   onPress={() => this.setState({ backgroundColor: '#8A95A5'})}
                 />
                 <TouchableOpacity 
+                  accessible={true}
+                  accessibilityLabel='Choose a green background'
+                  accessibilityRole='button'
                   style={[styles.colorChoice, styles.green]}
                   onPress={() => this.setState({ backgroundColor: '#B9C6AE' })} 
                 />
               </View>
             </View>
             <Pressable 
+              accessible={true}
+              accessibilityLabel='Start chat'
+              accessibilityRole='button'
               style={styles.startButton}
               onPress={() => this.props.navigation.navigate('Chat', { 
                 name: this.state.name, 
