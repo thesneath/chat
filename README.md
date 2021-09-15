@@ -1,8 +1,6 @@
 # Chat-App
----
 
 ## A Chat App built with React Native
----
 
 ## Requirements
 
@@ -45,5 +43,4 @@ This is a student project from CareerFoundry.com
 
 Code by: **Alex Sneath**
 
-  See more of my [work](https://github.com/thesneath):
-    https://github.com/thesneath
+  See more of my work: https://github.com/thesneath
